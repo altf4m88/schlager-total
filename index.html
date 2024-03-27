@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Schlager Total</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="./assets/video/schlager-background.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="content d-flex flex-column">
+            <div class="schlager-navbar-container d-flex justify-content-center align-items-center mt-4 w-100">
+                <nav class="schlager-navbar">
+                    <a class="schlager-nav-item" href="">Home</a>
+                    <a class="schlager-nav-item" href="">AM Radar</a>
+                    <a class="schlager-nav-item" href="">Music</a>
+                    <img class="schlager-logo" src="./assets/images/schlager-total.png" alt="Schlager Total">
+                    <a class="schlager-nav-item" href="">Trends</a>
+                    <a class="schlager-nav-item" href="">Fashion</a>
+                    <a class="schlager-nav-item" href="">Uber uns</a>
+                </nav>
+            </div>
+            <div class="schlager-carousel-group mt-5">
+                <div class="ad-space">space</div>
+                <div class="carousel-container">
+                    <h1 class="main-title">Wir Lieben <span class="text-yellow">Schlager</span></h1>
+                    <div class="swiper mySwiper mt-5">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="./assets/images/slide-1.png" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./assets/images/slide-2.png" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./assets/images/slide-3.png" />
+                          </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+                <div class="ad-space">space</div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center mt-5">
+                <div class="horizontal-ad-space"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="am-radar-container d-flex flex-column w-100">
+        <div class="am-radar-title">
+            <h1>AM Radar</h1>
+            <button class="btn-orange">See All</button>
+        </div>
+        <div class="row mt-3 mb-2 mb-sm-5 justify-content-between">
+            <div class="col-sm-6 col-md-6 col-lg-4 mb-4">
+                <div class="schlager-card">
+                    <div class="image-container" style="background-image: url('./assets/images/card-1.jpg');">
+                        <button class="overlay-button">
+                            <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51L51 21" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 21H51V51" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>    
+                        </button>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-date">
+                            <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4.5" cy="5" r="4.5" fill="#FD853A"/>
+                            </svg>
+                            <div class="date-item">28 Feb, 2024</div>
+                        </div>
+                        <div class="card-title">
+                            Markus Lanz – Der Schlagerliebhaber in der Welt des Talkshow-Glamours
+                        </div>
+                        <div class="card-subtitle">
+                            Andy Borg kann auf eine über 40-jährige erfolgreiche Musikkarriere zurückblicken, die nicht nur Millionen von Fans begeistert, sondern auch unter Kollegen hoch geschätzt ist.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 mb-4">
+                <div class="schlager-card">
+                    <div class="image-container" style="background-image: url('./assets/images/card-2.jpg');">
+                        <button class="overlay-button">
+                            <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51L51 21" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 21H51V51" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>    
+                        </button>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-date">
+                            <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4.5" cy="5" r="4.5" fill="#FD853A"/>
+                            </svg>
+                            28 Feb, 2024
+                        </div>
+                        <div class="card-title">
+                            Beatrice Egli – Auf der Suche nach der Liebe, während die Karriere strahlt
+                        </div>
+                        <div class="card-subtitle">
+                            Beatrice Egli, eine Frau, die nicht nur beruflich Mega-Erfolg verbucht, sondern auch als absolute Naturschönheit gefeiert wird. Jeder, der das Glück hat.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 mb-4">
+                <div class="schlager-card">
+                    <div class="image-container" style="background-image: url('./assets/images/card-3.jpg');">
+                        <button class="overlay-button">
+                            <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 51L51 21" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 21H51V51" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>    
+                        </button>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-date">
+                            28 Feb, 2024
+                        </div>
+                        <div class="card-title">
+                            SC-Ikone Ralph Siegel (78) kämpft sich zurück
+                        </div>
+                        <div class="card-subtitle">
+                            Operation an der Wirbelsäule, gefolgt von schmerzvoll-quälenden Tagen der Genesung. Doch trotz all seiner Leiden findet man den 78-jährigen Musiker erneut am Piano.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="neue-musik-container d-flex flex-column w-100">
+        <div class="neue-musik-title">
+            <h1><span class="text-yellow">Schlager</span> Neue Musik</h1>
+            <button class="btn-orange">See All</button>
+        </div>
+
+    </div>
+
+    <div class="neue-musik-container d-flex w-100">
+        <div class="neue-musik-title">
+            <h1><span class="text-yellow">Schlager</span> Der Woche</h1>
+        </div>
+    </div>
+
+    <div class="fashion-container d-flex w-100">
+        <div class="fashion-title">
+            <h1><span class="text-yellow">Schlager</span> Fashion</h1>
+            <button class="btn-orange">See All</button>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            initialSlide : 2,
+            loop : true,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 200,
+                depth: 300,
+                modifier: 1,
+                slideShadows: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+@font-face {
+    font-family: 'Lufga Medium';
+    src: url('../fonts/Fontspring-DEMO-lufga-medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Lufga Light';
+    src: url('../fonts/Fontspring-DEMO-lufga-light.otf') format('opentype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #050505;
+    color: #FFFAF5;
+    font-family: 'Lufga Medium', sans-serif;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    /* overflow: hidden; */
+}
+.video-container video {
+    /* Cover the entire container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure aspect ratio is maintained */
+}
+.content {
+    position: relative;
+    z-index: 5; /* Make sure content is above the video */
+}
+
+.schlager-logo {
+    width: 80px;
+}
+/* 
+.schlager-navbar {
+    background-color: #171717;
+    padding: 0px 20px;
+    border-radius: 60px;
+    border: 3px solid transparent;
+    border-image-source: linear-gradient(250.12deg, #593314 36.72%, #FCF120 52.61%, #8A01A0 66.83%, #0B926A 78.54%, #2FA5ED 91.92%, #F01C1A 104.04%, #FB72FF 117.42%);
+    border-image-slice: 1;
+    border-image-repeat: stretch;
+} */
+
+.schlager-navbar {
+    position: relative; /* Required for absolute positioning of pseudo-element */
+    background-color: #171717;
+    padding: 10px 20px;
+    border-radius: 60px; /* Rounded corners */
+}
+
+.schlager-navbar::before {
+    content: '';
+    position: absolute;
+    top: -5px; left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border-radius: 60px;
+    z-index: -1;
+    /* Gradient applied as a background */
+    background: linear-gradient(250.12deg, #593314 36.72%, #FCF120 52.61%, #8A01A0 66.83%, #0B926A 78.54%, #2FA5ED 91.92%, #F01C1A 104.04%, #FB72FF 117.42%);
+    background-size: 120% 120%;
+}
+
+.schlager-nav-item {
+    font-family: 'Lufga Medium', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 20px 40px;
+    border-radius: 60px;
+}
+
+.schlager-nav-item:hover {
+    color: white;
+    background-color: #FD853A;
+    transition-duration: 300ms
+}
+
+.main-title {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 80px;
+    text-align: center;
+}
+
+.text-yellow {
+    color: #EFE220;
+}
+
+.ad-space {
+    width: 160px;
+    background-color: white;
+}
+
+.schlager-carousel-group {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 5px;
+}
+
+.carousel-container {
+    width: auto;
+    max-width: 1000px;
+}
+
+.swiper {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    border-radius: 60px;
+}
+
+.swiper-slide img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    border-radius: 60px;
+
+}
+
+
+.swiper-pagination-bullet {
+    margin-top: 30px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 12px;
+    opacity: 1;
+    background: #E4E7EC;
+}
+
+.swiper-pagination-bullet-active {
+    transition-duration: 100ms;
+    height: 15px;
+    width: 60px;
+    border-radius: 20px;
+    background: #FD853A;
+}
+
+.swiper-button-prev {
+    margin-top: -100px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #344054;
+    border: 3px solid #FFFFFF
+}
+
+.swiper-button-prev::after {
+    content: "\276E";
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.swiper-button-next {
+    margin-top: -100px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #344054;
+    border: 3px solid #FFFFFF
+}
+
+.swiper-button-next::after {
+    content: "\276F";
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+
+.horizontal-ad-space {
+    width: 1000px;
+    height: 100px;
+    background-color: white;
+}
+
+.btn-orange {
+    font-family: 'Lufga Medium', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 20px 40px;
+    border-radius: 60px;
+    background-color: #FD853A;
+    transition-duration: 300ms;
+    border : none;
+
+}
+
+.am-radar-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.am-radar-container {
+    background-image: linear-gradient(180deg, #03933E 0%, rgba(253, 133, 58, 0.18) 100%);
+    padding: 80px 60px;
+    border-radius: 50px;
+}
+
+.neue-musik-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.neue-musik-container {
+    padding: 80px 40px;
+}
+
+.fashion-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fashion-container {
+    padding: 80px 40px;
+}
+
+
+.schlager-card > .image-container {
+    position: relative;
+    width: 100%; /* Width of your image */
+    height: 420px; /* Height of your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px; /* Optional: if you want rounded corners like in the image */
+}
+
+.schlager-card > .image-container > .overlay-button {
+    position: absolute;
+    right: 10px; /* Adjust as needed */
+    bottom: 10px; /* Adjust as needed */
+    background-color: #FFCC00; /* Your button color */
+    border: none; /* Removes the default border */
+    border-radius: 50%; /* Circular shape */
+    width: 110px; /* Width of the button */
+    height: 110px; /* Height of the button */
+    cursor: pointer; /* Changes the cursor on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: Adds shadow for depth */
+}
+
+.schlager-card > .image-container > .overlay-button:hover {
+    background-color: #E6B800; /* Slightly different color on hover */
+}
+
+.schlager-card > .card-content > .card-date {
+    margin-top: 14px;
+    font-size: 20px;
+    font-family: 'Lufga Light', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.schlager-card > .card-content > .card-date > .date-item {
+    margin-left: 4px;
+}
+
+.schlager-card > .card-content > .card-title {
+    margin-top: 14px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36.54px;
+    text-align: left;
+}
+
+
+.schlager-card > .card-content > .card-subtitle {
+    margin-top: 14px;
+    font-family: 'Inter', 'Lufga Light', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
