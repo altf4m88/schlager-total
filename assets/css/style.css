@@ -117,12 +117,11 @@ body {
 }
 
 .carousel-container {
-    width: auto;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 100vw;
 }
 
 .swiper {
-    width: 100%;
     height: 400px;
 }
 
@@ -364,6 +363,7 @@ body {
 
 .sdw-left-content {
     display: flex;
+    flex-direction: row;
     width: 80%;
 }
 
@@ -588,4 +588,152 @@ footer {
 .copyright-section {
     padding: 80px 0 0 0 ;
     font-family: 'Lufga Light';
+}
+
+.footer-links {
+    justify-content: space-between;
+}
+
+.footer-navigation-button {
+    display: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 60px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: #FFD526;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .ad-space {
+        display: none;
+    }
+
+    .horizontal-ad-space {
+        display: none;
+    }
+
+    .schlager-nav-item {
+        font-size: 16px;
+        padding: 8px 14px;
+    }
+
+    .footer-link-title {
+        font-size: 32px;
+    }
+
+    .footer-btn {
+        display: none;
+    }
+
+    .main-title {
+        font-size: 42px;
+    }
+
+    .swiper {
+        height: 300px;
+    }
+
+        
+    .neue-musik-card{
+        box-shadow: inset 0 -150px 40px -10px rgba(0,0,0,0.5);
+    }
+
+    .neue-musik-card:hover {
+        box-shadow: inset 0 -180px 80px -10px rgba(0,0,0,0.5);
+    }
+
+    .sdw-ad-space {
+        display: none;
+    }
+
+    .sdw-content {
+        justify-content: center;
+    }
+
+    .neue-musik-container {
+        padding: 80px 60px;
+    }
+
+    .sdw-left-content {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .sdw-main-image {
+        width: 100%;
+        height: 600px;
+    }
+
+    .schlager-der-woche-title {
+        margin: 0;
+        text-align: center;
+    }
+
+    .sdw-title {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .schlager-der-woche-container {
+        padding: 80px 60px;
+    }
+
+    .sdw-image-overlay {
+        border-radius: 12px;
+    }
+
+    .radio-cards {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .fashion-cards {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .fashion-container {
+        padding: 80px 60px;
+    }
+
+    footer {
+        padding: 80px 60px;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .copyright-section  {
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .schlager-nav-item {
+        display: none;
+    }
+
+    .sdw-title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22.59px;
+    }
+
+    .footer-small-title {
+        display: none;
+    }
+
+    .footer-nav-list {
+        display: none;
+    }
+
+    .footer-navigation-button {
+        display: flex;
+    }
+
 }
