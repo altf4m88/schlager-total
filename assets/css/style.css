@@ -209,7 +209,6 @@ body {
     background-color: #FD853A;
     transition-duration: 300ms;
     border : none;
-
 }
 
 .am-radar-title {
@@ -495,7 +494,7 @@ body {
 }
 
 footer {
-    padding: 80px 120px;
+    padding: 80px 120px 0px 120px;
     background-color: #171717;
 }
 
@@ -507,10 +506,86 @@ footer {
 .footer-link-title {
     font-size: 48px;
     font-weight: 600;
-    line-height: 62.64px;
+    line-height: 62px;
 }
 
 .footer-image {
     width: 80px;
     height: 80px;
+}
+
+.footer-main-content {
+    padding: 60px 0;
+    border-bottom: 2px solid #475467
+}
+
+.footer-description {
+    font-family: 'Lufga Light';
+    font-size: 24px;
+}
+
+.social-media-list a{
+    text-decoration: none;
+    font-style: normal;
+    color: white;
+}
+
+.footer-small-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    color: #FFD526;
+    margin-bottom: 20px;
+}
+
+.footer-nav-list {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav-item {
+    font-family: 'Lufga Light';
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.send-btn {
+    background-color: #FD853A;
+    transition-duration: 300ms;
+    border : none;
+}
+
+.input-group {
+    max-width: 500px; /* Adjust width as necessary */
+    margin: auto;
+
+}
+
+.input-group-text {
+    border: 1px solid #FD853A;
+}
+
+.form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: none; /* Removes Bootstrap's default box-shadow */
+    border: 1px solid white;
+}
+
+.bg-orange {
+    background-color: #FD853A;
+}
+
+.form-control::placeholder {
+    color: black; /* Lighter placeholder text */
+}
+
+.copyright-section {
+    padding: 80px 0 0 0 ;
+    font-family: 'Lufga Light';
 }
