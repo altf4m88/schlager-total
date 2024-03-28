@@ -244,7 +244,7 @@ body {
 }
 
 .fashion-container {
-    padding: 80px 40px;
+    padding: 80px 120px;
 }
 
 .schlager-card > .image-container {
@@ -440,4 +440,77 @@ body {
     width: 70%;
     height: 100%;
     background-color: white;
+}
+
+.schlager-fashion-card > .image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    transition-duration: 300ms;
+}
+
+
+.schlager-fashion-card > .image-container:hover {
+    box-shadow: inset 0 -120px 80px -10px rgba(0,0,0,0.5);
+}
+
+.schlager-fashion-card > .image-container > .overlay-button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: #FFCC00;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.schlager-fashion-card > .image-container > .overlay-button:hover {
+    background-color: #E6B800;
+}
+
+.schlager-fashion-card > .card-content > .card-date {
+    margin-top: 14px;
+    font-size: 14px;
+    font-family: 'Lufga Light', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.schlager-fashion-card > .card-content > .card-date > .date-item {
+    margin-left: 4px;
+}
+
+.schlager-fashion-card > .card-content > .card-title {
+    margin-top: 14px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.88px;
+    text-align: left;
+}
+
+footer {
+    padding: 80px 120px;
+    background-color: #171717;
+}
+
+.footer-links {
+    padding-bottom: 60px;
+    border-bottom: 2px solid #475467
+}
+
+.footer-link-title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 62.64px;
+}
+
+.footer-image {
+    width: 80px;
+    height: 80px;
 }
