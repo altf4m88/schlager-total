@@ -1,4 +1,9 @@
 @font-face {
+    font-family: 'Lufga Black';
+    src: url('../fonts/Fontspring-DEMO-lufga-black.otf') format('opentype');
+}
+
+@font-face {
     font-family: 'Lufga Medium';
     src: url('../fonts/Fontspring-DEMO-lufga-medium.otf') format('opentype');
 }
@@ -228,7 +233,7 @@ body {
 }
 
 .neue-musik-container {
-    padding: 80px 40px;
+    padding: 80px 120px;
 }
 
 .fashion-title {
@@ -242,31 +247,35 @@ body {
     padding: 80px 40px;
 }
 
-
 .schlager-card > .image-container {
     position: relative;
-    width: 100%; /* Width of your image */
-    height: 420px; /* Height of your image */
+    width: 100%;
+    height: 420px;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 20px; /* Optional: if you want rounded corners like in the image */
+    border-radius: 20px;
+    transition-duration: 300ms;
+}
+
+.schlager-card > .image-container:hover {
+    box-shadow: inset 0 -120px 80px -10px rgba(0,0,0,0.5);
 }
 
 .schlager-card > .image-container > .overlay-button {
     position: absolute;
-    right: 10px; /* Adjust as needed */
-    bottom: 10px; /* Adjust as needed */
-    background-color: #FFCC00; /* Your button color */
-    border: none; /* Removes the default border */
-    border-radius: 50%; /* Circular shape */
-    width: 110px; /* Width of the button */
-    height: 110px; /* Height of the button */
-    cursor: pointer; /* Changes the cursor on hover */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: Adds shadow for depth */
+    right: 10px;
+    bottom: 10px;
+    background-color: #FFCC00;
+    border: none;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .schlager-card > .image-container > .overlay-button:hover {
-    background-color: #E6B800; /* Slightly different color on hover */
+    background-color: #E6B800;
 }
 
 .schlager-card > .card-content > .card-date {
@@ -289,11 +298,63 @@ body {
     text-align: left;
 }
 
-
 .schlager-card > .card-content > .card-subtitle {
     margin-top: 14px;
     font-family: 'Inter', 'Lufga Light', sans-serif;
     font-size: 20px;
     font-weight: 400;
     text-align: left;
+}
+
+.neue-musik-card{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: inset 0 -100px 40px -10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+.neue-musik-card:hover {
+    box-shadow: inset 0 -120px 80px -10px rgba(0,0,0,0.5);
+}
+
+.neue-musik-card > .neue-musik-card-content > .overlay-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition-property: 10px;
+    background-color: transparent;
+    border: 1px solid #FD853A;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.neue-musik-card > .neue-musik-card-content > .overlay-button:hover {
+    background-color: white;
+}
+
+.neue-musik-card > .neue-musik-card-content > .overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-family: 'Lufga Medium';
+    font-size: 26px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.schlager-der-woche-container {
+    background-color: #222222;
+    padding: 40px 0;
+}
+
+.schlager-der-woche-title {
+    margin-left: 80px;
 }
