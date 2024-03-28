@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <div id="menu-items" class="hidden">
+        <div id="close-icon">&times;</div>
+        <a href="">Home</a>
+        <a href="">AM Radar</a>
+        <a href="">Music</a>
+        <a href="">Trends</a>
+        <a href="">Fashion</a>
+        <a href="">Uber uns</a>
+    </div>
     <div class="video-container">
         <video autoplay loop muted>
             <source src="./assets/video/schlager-background.mp4" type="video/mp4">
@@ -25,6 +34,11 @@
                     <a class="schlager-nav-item" href="">Trends</a>
                     <a class="schlager-nav-item" href="">Fashion</a>
                     <a class="schlager-nav-item" href="">Uber uns</a>
+                    <button class="navbar-toggler" onclick="toggleMenu()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <img src="./assets/images/gradient-burger.png" alt="collapse">
+                        </span>
+                    </button>
                 </nav>
             </div>
             <div class="schlager-carousel-group mt-5">
@@ -143,7 +157,7 @@
     <div class="neue-musik-container d-flex flex-column w-100">
         <div class="neue-musik-title">
             <h1><span class="text-yellow">Schlager</span> Neue Musik</h1>
-            <button class="btn-orange">See All</button>
+            <button class="btn-orange d-none d-sm-inline">See All</button>
         </div>
 
         <div class="row mt-4 justify-content-center">
@@ -308,11 +322,11 @@
     <div class="fashion-container d-flex flex-column align-items-center w-100">
         <div class="fashion-title">
             <h1><span class="text-yellow">Schlager</span> Fashion</h1>
-            <button class="btn-orange">See All</button>
+            <button class="btn-orange d-none d-sm-inline">See All</button>
         </div>
 
         <div class="row mt-3 mb-2 mb-sm-5 fashion-cards justify-content-between">
-            <div class="col-sm-6 col-md-6 col-lg-3 mb-4">
+            <div class="col-sm-6 col-md-6 col-lg-3 mb-4 card-row-no-padding">
                 <div class="schlager-fashion-card">
                     <div class="image-container" style="background-image: url('./assets/images/fcard-1.png');">
                         <button class="overlay-button">
@@ -335,7 +349,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 mb-4">
+            <div class="col-sm-6 col-md-6 col-lg-3 mb-4 card-row-no-padding">
                 <div class="schlager-fashion-card">
                     <div class="image-container" style="background-image: url('./assets/images/fcard-2.png');">
                         <button class="overlay-button">
@@ -358,7 +372,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 mb-4">
+            <div class="col-sm-6 col-md-6 col-lg-3 mb-4 card-row-no-padding">
                 <div class="schlager-fashion-card">
                     <div class="image-container" style="background-image: url('./assets/images/fcard-3.png');">
                         <button class="overlay-button">
@@ -381,7 +395,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 mb-4">
+            <div class="col-sm-6 col-md-6 col-lg-3 mb-4 card-row-no-padding">
                 <div class="schlager-fashion-card">
                     <div class="image-container" style="background-image: url('./assets/images/fcard-4.png');">
                         <button class="overlay-button">
@@ -424,7 +438,7 @@
                 Lorem
             </div>
         </div>
-        <div class="footer-main-content gap-5 row">
+        <div class="footer-main-content gap-3 gap-sm-5 row">
             <div class="col-12 col-md-5 footer-description">
                 <span class="text-yellow">Schlager total</span>
                 <span class="text-lowercase">HEISST EUCH HERZLICH WILLKOMMEN! UNSERE PLATTFORM LEBT VON DER GEMEINSCHAFT – GEMEINSAM ERLEBEN WIR DIE FASZINIERENDE WELT DES SCHLAGERS UND SCHAFFEN EIN UNVERGLEICHLICHES MITEINANDER</span>
@@ -457,7 +471,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-3 footer-nav">
-                <div class="footer-small-title">Navigation</div>
+                <div class="footer-small-title d-none d-sm-inline">Navigation</div>
                 <ul class="footer-nav-list">
                     <li class="footer-nav-item">Home</li>
                     <li class="footer-nav-item">About Us</li>
@@ -465,7 +479,18 @@
                     <li class="footer-nav-item">Resume</li>
                     <li class="footer-nav-item">Project</li>
                 </ul>
-                <button class="footer-navigation-button">Navigation</button>
+                <button class="footer-navigation-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-expanded="false" aria-controls="navbarToggleExternalContent">
+                    Navigation
+                </button>
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <ul class="footer-nav-list-collapsed">
+                        <li class="footer-nav-item">Home</li>
+                        <li class="footer-nav-item">About Us</li>
+                        <li class="footer-nav-item">Service</li>
+                        <li class="footer-nav-item">Resume</li>
+                        <li class="footer-nav-item">Project</li>
+                    </ul>
+                </div>
             </div>
             <div class="col-12 col-md-3 footer-email-form">
                 <div class="footer-small-title">Get the latest information</div>
@@ -481,7 +506,7 @@
                 </div>
             </div>
         </div>
-        <div class="copyright-section d-flex justify-content-between">
+        <div class="copyright-section d-flex justify-content-between text-center">
             <p>Copyright© 2024 <b>Schlager total</b>. All Rights Reserved.</p>
             <p>User Terms & Conditions | Privacy Policy</p>
         </div>
@@ -499,7 +524,7 @@
             effect: "coverflow",
             grabCursor: true,
             centeredSlides: true,
-            slidesPerView: 2,
+            slidesPerView: 1,
             initialSlide : 2,
             loop : true,
             coverflowEffect: {
@@ -518,12 +543,28 @@
             },
             // Responsive breakpoints
             breakpoints: {
+                500: {
+                    slidesPerView: 2,
+                },
                 1024: {
                     slidesPerView: 3,
                     spaceBetween: -200,
                 },
             }
         });
+
+        function toggleMenu() {
+            var menu = document.getElementById("menu-items");
+            if (menu.classList.contains("hidden")) {
+                menu.classList.remove("hidden");
+                menu.classList.add("visible");
+            } else {
+                menu.classList.remove("visible");
+                menu.classList.add("hidden");
+            }
+        }
+
+        document.getElementById("close-icon").addEventListener("click", toggleMenu);
     </script>
 </body>
 </html>

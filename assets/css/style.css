@@ -197,6 +197,10 @@ body {
     background-color: white;
 }
 
+.navbar-toggler {
+    display: none;
+}
+
 .btn-orange {
     font-family: 'Lufga Medium', sans-serif;
     text-decoration: none;
@@ -546,6 +550,13 @@ footer {
     padding: 0;
 }
 
+.footer-nav-list-collapsed {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .footer-nav-item {
     font-family: 'Lufga Light';
     font-size: 16px;
@@ -603,6 +614,48 @@ footer {
     color: #FFD526;
     width: 100%;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Menu Items Styling */
+#menu-items {
+    background-color: #171717;
+    transition-duration: 300ms;
+}
+
+#menu-items a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    background-color: #171717;
+    border: none;
+    color: white;
+    transition-duration: 300ms;
+}
+#menu-items a:hover {
+    background-color: #FD853A;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Visible menu */
+#menu-items.visible {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#close-icon {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -724,10 +777,6 @@ footer {
         line-height: 22.59px;
     }
 
-    .footer-small-title {
-        display: none;
-    }
-
     .footer-nav-list {
         display: none;
     }
@@ -736,4 +785,87 @@ footer {
         display: flex;
     }
 
+    .card-row-no-padding {
+        padding-right: 0;
+    }
+
+    .footer-link-title {
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer-links {
+        padding-bottom: 30px;
+    }
+
+    .footer-description{
+        text-align: center;
+    }
+
+    .footer-main-content {
+        padding-top: 30px;
+    }
+
+    .fashion-container, .schlager-der-woche-container, .neue-musik-container, .am-radar-container {
+        padding: 20px;
+    }
+
+    .sdw-main-image {
+        height: 300px;
+    }
+
+    .sdw-image-overlay {
+        padding: 20px;
+    }
+
+    .neue-musik-card > .neue-musik-card-content > .overlay-text {
+        font-size: 16px;
+    }
+        
+    .neue-musik-card{
+        box-shadow: inset 0 -80px 40px -10px rgba(0,0,0,0.5);
+    }
+
+    .neue-musik-card:hover {
+        box-shadow: inset 0 -100px 80px -10px rgba(0,0,0,0.5);
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        border-radius: 60px;
+    }
+    
+    .swiper-slide img {
+        display: block;
+        object-fit: contain;
+        width: 100%;
+        border-radius: 60px;
+    }
+
+    .main-title {
+        font-size: 32px;
+    }
+    
+    .navbar-toggler-icon > img{
+        width: 36px;
+        height: 36px;
+    }
+
+    .schlager-navbar {
+        display: flex;
+        margin: 0 20px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navbar-toggler {
+        display: inline;
+    }
 }
