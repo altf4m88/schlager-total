@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: 'Lufga Regular';
+    src: url('../fonts/Fontspring-DEMO-lufga-regular.otf') format('opentype');
+}
+
+@font-face {
     font-family: 'Lufga Medium';
     src: url('../fonts/Fontspring-DEMO-lufga-medium.otf') format('opentype');
 }
@@ -19,7 +24,7 @@ body {
     box-sizing: border-box;
     background-color: #050505;
     color: #FFFAF5;
-    font-family: 'Lufga Medium', sans-serif;
+    font-family: 'Lufga Regular', sans-serif;
 }
 
 .video-container {
@@ -94,6 +99,7 @@ body {
 }
 
 .main-title {
+    font-family: 'Lufga Regular';
     font-size: 72px;
     font-weight: 600;
     line-height: 80px;
